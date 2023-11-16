@@ -1,5 +1,6 @@
 {
-  "name": "ts-social",
+  "name": "my-journal",
+  "author": "daniel-mason",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

@@ -8,17 +8,12 @@ defineEmits(["update:modelValue"]);
 
 <template>
   <div class="emoji-container">
-    <component
-      v-for="emoji in emojis"
-      :is="emoji.component"
-      :key="emoji.name"
-      :class="{ selected: modelValue === emoji.name }"
-      @click="
+    <component v-for="emoji in emojis" :is="emoji.component" :key="emoji.name"
+      :class="{ selected: modelValue === emoji.name }" @click="
         $emit(
           'update:modelValue',
           emoji.name === modelValue ? null : emoji.name
         )
-      "
-    ></component>
+        "></component>
   </div>
 </template>
